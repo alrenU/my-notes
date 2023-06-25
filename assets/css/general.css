@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Public Sans";
+    src: url("../fonts/Public_Sans/static/PublicSans-Light.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #191919;
+}
+
+p {
+    color: #C6C6C6;
+    font-family: "Public Sans";
+}
