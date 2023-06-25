@@ -1,15 +1,37 @@
 @font-face {
-    font-family: "Public Sans";
-    src: url("../fonts/Public_Sans/static/PublicSans-Light.ttf");
+    font-family: "Open Sans Light";
+    src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "Public Sans Light";
+    src: url("../fonts/Public_Sans/PublicSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Mono Light";
+    src: url("../fonts/Roboto_Mono/RobotoMono-Light.ttf");
 }
 
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
     background-color: #191919;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #C6C6C6;
+    font-family: "Open Sans Light";
 }
 
 p {
     color: #C6C6C6;
-    font-family: "Public Sans";
+    font-family: "Public Sans Light";
+}
+
+code {
+    font-family: "Roboto Mono Light";
 }
