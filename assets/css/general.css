@@ -23,15 +23,20 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #C6C6C6;
+    color: #dcdcdc;
     font-family: "Open Sans Light";
 }
 
 p {
     color: #C6C6C6;
     font-family: "Public Sans Light";
+    line-height: 1.5;
 }
 
 code {
     font-family: "Roboto Mono Light";
+}
+
+pre {
+    color: #C6C6C6;
 }
