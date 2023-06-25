@@ -28,3 +28,10 @@
     white-space: pre-wrap;
     margin-top: 5px;
 }
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .content {
+        width: 100%;
+    }
+}
