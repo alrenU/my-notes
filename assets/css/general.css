@@ -20,6 +20,7 @@
 
 body {
     background-color: #191919;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,4 +40,23 @@ code {
 
 pre {
     color: #C6C6C6;
+}
+
+.heading {
+    color: #567ed6;
+    font-family: "Open Sans Light";
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+ul, ol {
+    color: #C6C6C6;
+    font-family: "Public Sans Light";
+    margin-left: 16px;
+}
+
+a {
+    color: #C6C6C6;
+    font-family: "Open Sans Light";
 }
