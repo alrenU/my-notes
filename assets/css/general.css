@@ -59,4 +59,5 @@ ul, ol {
 a {
     color: #C6C6C6;
     font-family: "Open Sans Light";
+    text-decoration: none;
 }

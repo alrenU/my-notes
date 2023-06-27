@@ -1,5 +1,6 @@
 // Get the elements which has the ID value of 'heading'.
 const headings = document.getElementsByClassName("heading");
+
 const HEADING_ID_LIST = [];
 let heading_number = 1;
 
@@ -34,8 +35,7 @@ for(let index = 0; index < HEADING_ID_LIST.length; index++) {
 }
 
 // Put navigation links inside unordered list.
-// const navigationElement = document.getElementById("navigation");
-const navigationListElement = document.getElementById("navigaation-list");
+const navigationListElement = document.getElementById("navigation-list");
 
 for(let index = 0; index < NAVIGATION_LINKS.length; index++) {
     const newListElement = document.createElement("li");
@@ -44,7 +44,12 @@ for(let index = 0; index < NAVIGATION_LINKS.length; index++) {
     newLinkElement.textContent = NAVIGATION_LINKS[index];
 
     newLinkElement.setAttribute("href", `#${HEADING_ID_LIST[index]}`);
-    // navigationElement.appendChild(newLinkElement);
     newListElement.appendChild(newLinkElement);
     navigationListElement.appendChild(newListElement);
+}
+
+// Make navigation visible.
+if(HEADING_ID_LIST.length !== 0) {
+    const navigationElement = document.getElementById("navigation");
+    navigationElement.style.display = "flex";
 }
