@@ -29,6 +29,14 @@
     margin-top: 5px;
 }
 
+.explanation {
+    color: #d65656;
+}
+
+.explanation span {
+    color: #C6C6C6;
+}
+
 /* Media Queries */
 @media screen and (max-width: 960px) {
     .content {
