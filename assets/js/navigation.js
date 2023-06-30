@@ -2,7 +2,7 @@
 const headings = document.getElementsByClassName("heading");
 
 const HEADING_ID_LIST = [];
-let heading_number = 1;
+// let heading_number = 1;
 
 for(let index = 0; index < headings.length; index++) {
     const heading_id = headings[index].getAttribute("id");
@@ -11,8 +11,8 @@ for(let index = 0; index < headings.length; index++) {
         HEADING_ID_LIST.push(heading_id);
 
         // Assign number to the heading.
-        headings[index].textContent = `${heading_number}. ${headings[index].textContent}`
-        heading_number++;
+        // headings[index].textContent = `${heading_number}. ${headings[index].textContent}`
+        // heading_number++;
     }
 }
 
