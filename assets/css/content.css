@@ -6,7 +6,7 @@
 }
 
 .main-title {
-    color: #567ed6;
+    color: #7593d5;
     font-family: "Open Sans Light";
     font-size: 25px;
     font-weight: bold;
@@ -14,7 +14,7 @@
 }
 
 .explanation-title {
-    color: #d65656 !important;
+    color: #7593d5  !important;
 }
 
 .code-short {
@@ -35,7 +35,7 @@
 }
 
 .explanation {
-    color: #d65656;
+    color: #d57575;
 }
 
 .explanation span {

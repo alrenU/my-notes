@@ -14,7 +14,7 @@
     height: fit-content;
 
     margin-top: 50px;
-    width: 240px;
+    max-width: 240px;
 }
 
 #navigation a {
