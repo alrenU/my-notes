@@ -2,17 +2,12 @@
 const headings = document.getElementsByClassName("heading");
 
 const HEADING_ID_LIST = [];
-// let heading_number = 1;
 
 for(let index = 0; index < headings.length; index++) {
     const heading_id = headings[index].getAttribute("id");
 
     if(heading_id !== null) {
         HEADING_ID_LIST.push(heading_id);
-
-        // Assign number to the heading.
-        // headings[index].textContent = `${heading_number}. ${headings[index].textContent}`
-        // heading_number++;
     }
 }
 
@@ -49,7 +44,25 @@ for(let index = 0; index < NAVIGATION_LINKS.length; index++) {
 }
 
 // Make navigation visible.
-if(HEADING_ID_LIST.length !== 0) {
-    const navigationElement = document.getElementById("navigation");
-    navigationElement.style.display = "flex";
+let window_height = window.screen.width;
+displayNavigation(window_height);
+
+// window.onresize = function() {
+//     window_height = window.screen.width;
+//     displayNavigation(window_height);
+//     console.log(window_height);
+// };
+
+function displayNavigation(windowHeight) {
+    // if(HEADING_ID_LIST.length !== 0 && windowHeight > 1999) {
+    if(HEADING_ID_LIST.length !== 0) {
+        const navigationElement = document.getElementById("navigation");
+        navigationElement.style.display = "flex";
+    
+        console.log("here");
+    }
+    else {
+        const navigationElement = document.getElementById("navigation");
+        navigationElement.style.display = "none";
+    }
 }
