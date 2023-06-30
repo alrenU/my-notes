@@ -32,11 +32,9 @@
             <div style="margin-top: 20px;">
                 <p class="heading main-title" id="preliminary-informations">Preliminary Informations</p>
                 <ul>
-                    <li>Browsers interprets the HTML and CSS code.</li>
                     <li class="explanation"><span class="heading explanation-title"
-                            id="content-management-system">Content Management System (CMS): </span><span>Refers
-                            to the overall
-                            software system that enables content creation, management, and publication. For
+                            id="content-management-system">Content Management System (CMS): </span><span>Refers to the
+                            overall software system that enables content creation, management, and publication. For
                             example:
                             <ul>
                                 <li>WordPress</li>
@@ -48,8 +46,7 @@
                         </span>
                         <ol>
                             <li class="explanation">Content Management Application: <span>Handles content
-                                    creation,
-                                    organization, and management. It provides the user interface and tools for
+                                    creation, organization, and management. It provides the user interface and tools for
                                     content-related tasks. For example:
                                     <ul>
                                         <li>WordPress Dashboard</li>
@@ -57,57 +54,65 @@
                                         <li>Joomla Article Manager</li>
                                     </ul>
                                 </span><br></li>
-                            <li class="explanation">Content Delivery Application: <span>Responsible for
-                                    presenting
-                                    and delivering the content to end-users. It generates dynamic web pages
-                                    based on
-                                    the content stored in the CMS and serves them to website visitors. Some
-                                    Content
-                                    Delivery Application examples:
+                            <li class="explanation">Content Delivery Application: <span>Responsible for presenting and
+                                    delivering the content to end-users. It generates dynamic web pages based on the
+                                    content stored in the CMS and serves them to website visitors. Some Content Delivery
+                                    Application examples:
                                     <ul>
                                         <li>WordPress Frontend</li>
                                         <li>Drupal Rendering System</li>
                                         <li>Joomla Frontend</li>
                                     </ul>
-                                    <br>
-                                    The server renders the code and then responds back to the client with the
-                                    generated web pages. It does it by taking the stored content, applying
-                                    templates, themes, and other relevant components, and dynamically rendering
-                                    the
-                                    HTML, CSS, and JavaScript code that make up the web page. Some Content
-                                    Delivery
-                                    Applications may use server-side rendering (SSR), while others may utilize
-                                    client-side rendering (CSR) or a combination of both (e.g., hybrid
-                                    rendering).
+                                    <br> The server renders the code and then responds back to the client with the
+                                    generated web pages. It does it by taking the stored content, applying templates,
+                                    themes, and other relevant components, and dynamically rendering the HTML, CSS, and
+                                    JavaScript code that make up the web page. Some Content Delivery Applications may
+                                    use server-side rendering (SSR), while others may utilize client-side rendering
+                                    (CSR) or a combination of both (e.g., hybrid rendering).
                                 </span></li>
                         </ol>
                     </li>
                     <br>
                     <li class="explanation"><span class="heading explanation-title" id="domain-name-system">DNS (Domain
-                            Name System): </span><span>It is a distributed (numerous interconnected DNS servers) naming
-                            system used to translate human-readable domain names into IP addresses. In simpler terms,
-                            DNS is like a phonebook for the internet. A domain can have an email address associated with it.
+                            Name System): </span><span>It is a distributed (interconnected DNS servers) naming system
+                            used to translate human-readable domain names into IP addresses.
                             <br><br>
-                            When you type a domain name, such as "www.example.com", into your web browser,
-                            the DNS system is responsible for finding the corresponding IP address associated with that
-                            domain. It acts as a directory that matches the domain name to the correct IP address of the
-                            server hosting the website or providing the requested service.
-                        </span>
-                    </li>
-                    <br>
-                    <li class="explanation"><span class="heading explanation-title"
-                            id="how-a-browser-reach-the-website">How a Browser Reach the Website</span>
-                        <br><span>The DNS system consists of a hierarchy of servers distributed worldwide. These servers
+                            When you type a domain name, such as "www.example.com", into your web browser, the DNS
+                            system is responsible for finding the corresponding IP address associated with that domain.
+                            It acts as a directory that matches the domain name to the correct IP address of the server
+                            hosting the website or providing the requested service. A domain can have an email address
+                            associated with it.
+                            <br><br>
+                            The DNS system consists of a hierarchy of servers distributed worldwide. These servers
                             work together to resolve domain names into IP addresses. When you enter a domain name, your
                             computer first contacts a local DNS resolver (typically provided by your internet service
                             provider). If the local resolver doesn't have the IP address in its cache, it queries other
                             DNS servers in a recursive manner until it finds the correct IP address. The IP address is
                             then returned to your computer, allowing it to establish a connection with the desired
                             website or service.
-                            <br><br>
-                            The DNS servers are organized in a hierarchical manner, forming a network of interconnected
-                            servers. At the top of the hierarchy are the root DNS servers. These servers store
-                            information about the top-level domains (TLDs) such as .com, .org, .net, and the
+                        </span>
+                    </li>
+                    <br>
+                    <li class="explanation"><span class="heading explanation-title" id="top-level-domain">Top Level
+                            Domain: </span><span>A top-level domain (TLD) is the highest level in the hierarchical
+                            domain name system (DNS). It is the part of a domain name that appears to the right of the
+                            final dot, such as ".com," ".org," or ".net.". TLDs are used to categorize and classify
+                            websites. There are two main types of TLDs:</span>
+                        <ol>
+                            <li class="explanation">Generic Top-Level Domains (gTLDs): <span>These are TLDs that are not
+                                    associated with a specific country or geographic region (for example: .com,
+                                    .edu).</span></li>
+                            <li class="explanation">Country Code Top-Level Domains (ccTLDs): <span>These are TLDs that
+                                    are associated with a specific country or geographic region (for example: .us,
+                                    .uk).</span></li>
+                        </ol>
+                    </li>
+                    <br>
+                    <li class="explanation"><span class="heading explanation-title"
+                            id="how-a-browser-reach-to-a-website">How a Browser Reach to a Website</span>
+                        <br><span>The DNS servers are organized in a hierarchical manner, forming a network of
+                            interconnected servers. At the top of the hierarchy are the root DNS servers. These servers
+                            store information about the top-level domains (TLDs) such as .com, .org, .net, and the
                             country-code TLDs like .uk, .fr, etc. Beneath the root servers are the authoritative DNS
                             servers responsible for specific domain names or zones.
                             <br><br>
@@ -132,6 +137,12 @@
                             turn, responds to the client's requests and provides the requested content or service over
                             the established connection.</span>
                     </li>
+                    <br>
+                    <li class="explanation"><span class="heading explanation-title"
+                            id="internet-service-provider">Internet Service Provider (ISP): </span><span>It is a company
+                            or organization that provides internet connectivity to individuals, businesses, and other
+                            entities. ISPs typically offer different types of internet connections, such as dial-up, DSL
+                            (Digital Subscriber Line), cable, fiber-optic, or wireless connections.</span></li>
                 </ul>
             </div>
         </section>
