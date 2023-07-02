@@ -38,9 +38,12 @@
     color: #d57575;
 }
 
-/* .explanation span {
-    color: #C6C6C6;
-} */
+.highlight {
+    background-color: rgba(251, 255, 0, 0.25);
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 3px;
+}
 
 /* Media Queries */
 @media screen and (max-width: 960px) {

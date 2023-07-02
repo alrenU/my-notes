@@ -32,7 +32,7 @@
             <div style="margin-top: 20px;">
                 <ul>
                     <li><span class="heading explanation-title" id="content-management-system">Content Management System
-                            (CMS): </span>Refers to the overall software system that enables content creation,
+                            (CMS):</span> Refers to the overall software system that enables content creation,
                         management, and publication. For example:
                         <ul>
                             <li>WordPress</li>
@@ -73,7 +73,7 @@
                     </li>
                     <br>
                     <li><span class="heading explanation-title" id="domain-name-system">DNS (Domain Name System):
-                        </span>It is a distributed (interconnected DNS servers) naming system used to translate
+                        </span> It is a distributed (interconnected DNS servers) naming system used to translate
                         human-readable domain names into IP addresses.
                         <br><br>
                         When you type a domain name, such as "www.example.com", into your web browser, the DNS system is
@@ -91,7 +91,7 @@
                     </li>
                     <br>
                     <li><span class="heading explanation-title" id="top-level-domain">Top Level
-                            Domain: </span>A top-level domain (TLD) is the highest level in the hierarchical domain name
+                            Domain:</span> A top-level domain (TLD) is the highest level in the hierarchical domain name
                         system (DNS). It is the part of a domain name that appears to the right of the final dot, such
                         as ".com," ".org," or ".net.". TLDs are used to categorize and classify websites.
                         <br><br>
@@ -138,13 +138,13 @@
                     </li>
                     <br>
                     <li class="explanation"><span class="heading explanation-title"
-                            id="internet-service-provider">Internet Service Provider (ISP): </span>It is a company or
+                            id="internet-service-provider">Internet Service Provider (ISP):</span> It is a company or
                         organization that provides internet connectivity to individuals, businesses, and other entities.
                         ISPs typically offer different types of internet connections, such as dial-up, DSL (Digital
                         Subscriber Line), cable, fiber-optic, or wireless connections.</li>
                     <br>
                     <li class="explanation"><span class="heading explanation-title" id="internet-protocol-address">IP
-                            (Internet Protocol) Address: </span>It is a unique numerical label assigned to each device
+                            (Internet Protocol) Address:</span> It is a unique numerical label assigned to each device
                         connected to a computer network that uses the Internet Protocol for communication. It serves two
                         main purposes: identifying the host or network interface (hardware or software component that
                         allows a device to connect to a computer network) and providing the location of the device in
@@ -156,6 +156,7 @@
                                 manually assigned to a device and remains constant. It doesn't change unless it is
                                 reconfigured manually. Static IP addresses are often used for devices that require
                                 consistent and predictable connectivity, such as servers or network equipment.</li>
+                            <br>
                             <li><span class="explanation-subtitle">Dynamic IP Address:</span> A dynamic IP address is
                                 assigned automatically by a Dynamic Host Configuration Protocol (DHCP) server. When your
                                 device connects to the network, the DHCP server dynamically assigns an available IP
@@ -194,31 +195,7 @@
                         addresses may serve different purposes or belong to different network classes.
                     </li>
                     <br>
-                    <li class="explanation"><span class="heading explanation-title" id="subnet-mask">Subnet Mask:
-                        </span>A subnet mask is a 32-bit number used in IP (Internet Protocol) networking to divide an
-                        IP address into two parts: the network address and the host address. It is used to determine
-                        which part of the IP address represents the network and which part represents the host.
-                        <br><br>
-                        The subnet mask consists of a series of ones (1) followed by a series of zeros (0). The ones
-                        represent the network portion of the IP address, and the zeros represent the host portion. The
-                        length of the ones in the subnet mask determines the size of the network.
-                        <br><br>
-                        For example, a common subnet mask used in IPv4 is 255.255.255.0. In binary, this is represented
-                        as 11111111.11111111.11111111.00000000. Here, the first three octets (24 bits) are ones,
-                        indicating the network portion, and the last octet (8 bits) is all zeros, representing the host
-                        portion. This subnet mask is used to create a network with 24 bits for the network address and 8
-                        bits for the host address, allowing for up to 254 hosts in the network.
-                        <br><br>
-                        Subnet masks can vary depending on the size of the network required. They can be expressed in
-                        dotted decimal notation, as shown above, or in CIDR (Classless Inter-Domain Routing) notation,
-                        which uses a slash followed by the number of ones in the subnet mask. For example, the subnet
-                        mask 255.255.255.0 can also be expressed as /24 in CIDR notation.
-                        <br><br>
-                        With the advent of IPv6, which uses a different addressing scheme, subnet masks are less
-                        commonly used. Instead, IPv6 typically uses prefix lengths to denote the network portion.
-                    </li>
-                    <br>
-                    <li class="explanation"><span class="heading explanation-title" id="subnet">Subnet: </span>a subnet,
+                    <li class="explanation"><span class="heading explanation-title" id="subnet">Subnet:</span> A subnet,
                         short for subnetwork, refers to a logical subdivision of an IP network. It involves dividing a
                         larger network into smaller, more manageable parts called subnets.
                         <br><br>
@@ -232,8 +209,33 @@
                         belong to the same subnet.
                     </li>
                     <br>
+                    <li class="explanation"><span class="heading explanation-title" id="subnet-mask">Subnet Mask:
+                        </span> A subnet mask is a 32-bit number used in IP (Internet Protocol) networking to divide an
+                        IP address into two parts: the network address and the host address. It is used to determine
+                        which part of the IP address represents the network and which part represents the host.
+                        <br><br>
+                        The subnet mask consists of a series of ones (1) followed by a series of zeros (0). The ones
+                        represent the network portion of the IP address, and the zeros represent the host portion. The
+                        length of the ones in the subnet mask determines the size of the network.
+                        <br><br>
+                        For example, a common subnet mask used in IPv4 is <span class="highlight">255.255.255.0</span>.
+                        In binary, this is represented as <span
+                            class="highlight">11111111.11111111.11111111.00000000</span>. Here, the first three octets
+                        (24 bits) are ones, indicating the network portion, and the last octet (8 bits) is all zeros,
+                        representing the host portion. This subnet mask is used to create a network with 24 bits for the
+                        network address and 8 bits for the host address, allowing for up to 254 hosts in the network.
+                        <br><br>
+                        Subnet masks can vary depending on the size of the network required. They can be expressed in
+                        dotted decimal notation, as shown above, or in CIDR (Classless Inter-Domain Routing) notation,
+                        which uses a slash followed by the number of ones in the subnet mask. For example, the subnet
+                        mask 255.255.255.0 can also be expressed as /24 in CIDR notation (255.255.255.0/24).
+                        <br><br>
+                        With the advent of IPv6, which uses a different addressing scheme, subnet masks are less
+                        commonly used. Instead, IPv6 typically uses prefix lengths to denote the network portion.
+                    </li>
+                    <br>
                     <li class="explanation"><span class="heading explanation-title"
-                            id="network-address-translation">Network Address Translation (NAT): </span>Network Address
+                            id="network-address-translation">Network Address Translation (NAT):</span> Network Address
                         Translation (NAT) is a technique used in computer networks to map an IP address or a range of IP
                         addresses to another IP address or a different range of IP addresses. It is primarily employed
                         in internet routing to conserve the limited pool of available IP addresses.
@@ -268,6 +270,24 @@
                                 pool and creates a temporary mapping for that session. Address reuse: When a session is
                                 terminated, the public IP address that was assigned to that session is released back to
                                 the pool and can be reused for subsequent sessions.
+                            </li>
+                            <br>
+                            <li><span class="explanation-subtitle">Dynamic Port Address Translation (PAT):</span> also
+                                known as Port Address Translation or Overload NAT. It allows multiple devices on a
+                                private network to share a single public IP address while using different port numbers
+                                to distinguish between their connections.
+                                <br><br>
+                                When a device on the private network sends data to the internet, the router modifies the
+                                source IP address and port number of the outgoing packets to the public IP address and a
+                                unique port number. When the responses come back from the internet, the router uses the
+                                port number to correctly route the incoming packets back to the appropriate device on
+                                the private network.
+                                <br><br>
+                                PAT allows for a much larger number of devices to share a single public IP address
+                                compared to other forms of NAT. PAT is commonly used in residential and small
+                                office/home office (SOHO - Small Office/Home Office) environments where there are more
+                                devices than available
+                                public IP addresses. It allows multiple devices to access the internet simultaneously.
                             </li>
                         </ol>
                     </li>
