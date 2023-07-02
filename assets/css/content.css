@@ -34,13 +34,13 @@
     margin-top: 5px;
 }
 
-.explanation {
+.explanation-subtitle {
     color: #d57575;
 }
 
-.explanation span {
+/* .explanation span {
     color: #C6C6C6;
-}
+} */
 
 /* Media Queries */
 @media screen and (max-width: 960px) {

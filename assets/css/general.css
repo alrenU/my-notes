@@ -48,6 +48,10 @@ ul, ol {
     margin-left: 16px;
 }
 
+li::marker {
+    color: #d57575;
+}
+
 a {
     color: #C6C6C6;
     font-family: "Open Sans Light";

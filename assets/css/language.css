@@ -1,8 +1,7 @@
 .definitions {
-    color: #d57575;
     text-transform: capitalize;
 }
 
 .definitions span {
-    color: #C6C6C6;
+    color: #d57575;
 }
