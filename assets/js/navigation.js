@@ -44,25 +44,25 @@ for(let index = 0; index < NAVIGATION_LINKS.length; index++) {
 }
 
 // Make navigation visible.
-let window_height = window.screen.width;
-displayNavigation(window_height);
+let window_width = window.screen.width;
+displayNavigation(window_width);
 
-// window.onresize = function() {
-//     window_height = window.screen.width;
-//     displayNavigation(window_height);
-//     console.log(window_height);
-// };
+window.onresize = function() {
+    window_width = window.screen.width;
+    displayNavigation(window_width);
+};
 
-function displayNavigation(windowHeight) {
-    // if(HEADING_ID_LIST.length !== 0 && windowHeight > 1999) {
+function displayNavigation(windowWidth) {
     if(HEADING_ID_LIST.length !== 0) {
         const navigationElement = document.getElementById("navigation");
-        navigationElement.style.display = "flex";
-    
-        console.log("here");
-    }
-    else {
-        const navigationElement = document.getElementById("navigation");
-        navigationElement.style.display = "none";
+        const scrollToTop = document.getElementById("scroll-to-top");
+
+        if(windowWidth > 1199) {
+            navigationElement.style.display = "flex";
+            scrollToTop.style.display = "none";
+        } else {
+            navigationElement.style.display = "none";
+            scrollToTop.style.display = "flex";
+        }
     }
 }
