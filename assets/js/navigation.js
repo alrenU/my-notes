@@ -1,6 +1,5 @@
-// Get the elements which has the ID value of 'heading'.
+// Get the elements which has the class name value of 'heading'.
 const headings = document.getElementsByClassName("heading");
-
 const HEADING_ID_LIST = [];
 
 for(let index = 0; index < headings.length; index++) {
