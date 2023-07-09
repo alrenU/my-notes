@@ -23,7 +23,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #7593d5;
     font-family: "Open Sans Light";
 }
@@ -42,7 +47,8 @@ pre {
     color: #C6C6C6;
 }
 
-ul, ol {
+ul,
+ol {
     color: #C6C6C6;
     font-family: "Public Sans Light";
     margin-left: 16px;
@@ -62,4 +68,21 @@ a {
     width: 100vw;
     display: flex;
     justify-content: center;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #b2b2b2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #464646;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #b2b2b2;
 }
