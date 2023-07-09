@@ -33,14 +33,15 @@ for(let index = 0; index < HEADING_ID_LIST.length; index++) {
 const navigationListElement = document.getElementById("navigation-list");
 
 for(let index = 0; index < NAVIGATION_LINKS.length; index++) {
-    const newListElement = document.createElement("li");
-    const newLinkElement = document.createElement("a");
+    const newParagraphElement = document.createElement("p");
+    newParagraphElement.textContent = `${index + 1}. `;
 
+    const newLinkElement = document.createElement("a");
     newLinkElement.textContent = NAVIGATION_LINKS[index];
 
     newLinkElement.setAttribute("href", `#${HEADING_ID_LIST[index]}`);
-    newListElement.appendChild(newLinkElement);
-    navigationListElement.appendChild(newListElement);
+    newParagraphElement.appendChild(newLinkElement);
+    navigationListElement.appendChild(newParagraphElement);
 }
 
 // Make navigation visible.
