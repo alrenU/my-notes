@@ -27,3 +27,8 @@
 #navigation-list p {
     color: #d57575;
 }
+
+#navigation-list a.active {
+    font-weight: bold;
+    color: #acb043;
+  }
