@@ -70,6 +70,31 @@ a {
     justify-content: center;
 }
 
+/* TABLE */
+table {
+    background-color: #2d2e40;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    padding: 5px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+th {
+    font-family: "Open Sans Light";
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #232433;
+}
+
+td {
+    vertical-align: top;
+}
+
 /* SCROLL BAR */
 ::-webkit-scrollbar {
     width: 15px;

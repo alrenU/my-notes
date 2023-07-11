@@ -43,13 +43,29 @@
                         to XML syntax, XHTML documents are well-formed and can be parsed using XML parsers. This allows
                         for greater interoperability and compatibility across different platforms and devices.
                     </li>
+                    <br>
+                    <li>HTML stands for <span class="highlight">HyperText Markup Language</span>.</li>
+                    <br>
+                    <li>Markup means what is presented to a viewer, not how it is presented. Visual representations are
+                        defined by Cascading Style Sheets (CSS).</li>
+                    <br>
+                    <li>HTML is not a programming language because it has no logic, so it is a markup language.</li>
+                    <br>
+                    <li>Browsers interprets the HTML and CSS codes.</li>
+                    <br>
+                    <li>The file extention of the html must be either of <span class="highlight">.html</span> or <span
+                            class="highlight">.htm</span> in order to be recognizd as HTML files.
+                        <br><br>
+                        The difference between the .html and .htm extensions is historical and has no impact on how web
+                        pages are interpreted by browsers. In the early days of the web, file extensions were limited to
+                        three characters due to the limitations of older operating systems. As a result, some operating
+                        systems could only handle file extensions with a maximum of three characters.
+                    </li>
+                    <br>
                 </ul>
                 <br>
                 <p class="main-title">Content</p>
                 <ul>
-                    <li>HTML stands for <span class="highlight">HyperText Markup Language</span>.</li><br>
-                    <li>Markup means what is presented to a viewer.</li><br>
-                    <li>Browsers interprets the HTML and CSS code.</li><br>
                     <li><span class="heading explanation-title A" id="tag-and-element">Tag and Element</span><br>
                         <ul>
                             <li><span class="heading explanation-subtitle AB" id="tag">Tag:</span> A tag is a markup
@@ -65,22 +81,19 @@
                                 construct in HTML that includes both the opening and closing tags, as well as the
                                 content contained within them. It represents a specific part of a web page's structure
                                 or functionality. Elements are made up of tags, attributes, and content. For example:
-                                <pre class="code-long">
-<code>&lt;p&gt;This is a paragraph element.&lt;/p&gt;</code></pre>
+                                <pre
+                                    class="code-long"><code>&lt;p&gt;This is a paragraph element.&lt;/p&gt;</code></pre>
                             </li>
                             <br><br>
                             Some elements, such as <code class="code-short">&lt;img&gt;</code> or <code
                                 class="code-short">&lt;br&gt;</code>, are self-closing and don't require a closing tag.
                             For example:
-                            <pre class="code-long">
-<code>&lt;img src="image.jpg" alt="Image"&gt;</code></pre>
+                            <pre class="code-long"><code>&lt;img src="image.jpg" alt="Image"&gt;</code></pre>
                             <br><br>
                             In HTML5, the forward slash ("/") at the end of a self-closing tag is considered
                             optional. Both of the following formats are valid:
-                            <pre class="code-long">
-<code>&lt;img src="image.jpg"&gt;</code></pre>
-                            <pre class="code-long">
-<code>&lt;img src="image.jpg" /&gt;</code></pre>
+                            <pre class="code-long"><code>&lt;img src="image.jpg"&gt;</code></pre>
+                            <pre class="code-long"><code>&lt;img src="image.jpg" /&gt;</code></pre>
                             <br>
                             <ul>
                                 <li><span class="heading explanation-subtitle ABC" id="void-element">Void
@@ -92,6 +105,53 @@
                         <br>
                         In summary, a tag is the markup construct that defines an element, while an element is the
                         complete construct consisting of the opening and closing tags, along with its content.
+                    </li>
+                    <br>
+                    <li>In a basic element structure, content goes between the opening and closing tags:
+                        <pre class="code-long"><code>&lt;p&gt;Content goes here.&lt;/p&gt;</code></pre>
+                    </li>
+                    <br>
+                    <li>A base HTML page structure is like this:
+                        <pre class="code-long"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title>Hello!&lt;/title&gt;
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+        &lt;h1>Hello World!&lt;h1&gt;
+        &lt;p>This is a simple paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Definition</th>
+                            </tr>
+                            <tr>
+                                <td>&lt;!DOCTYPE&gt;</td>
+                                <td>It is used to specify the document type and version of HTML being used. It is an
+                                    instruction to the browser about how to interpret the markup of the document. The
+                                    <code class="code-short">&lt;!DOCTYPE&gt;</code> decleration must be placed at the
+                                    beginning of an HTML file, before the <code class="code-short">&lt;html&gt;</code>
+                                    tag.
+                                    <br><br>
+                                    The declaration is followed by a <span class="highlight">document type definition
+                                        (DTD)</span> or a reference to an external DTD file. The purpose of the DTD is
+                                    to define the rules and structure that the HTML document must adhere to.
+                                    <br><br>
+                                    For example this declaration is for HTML5:
+                                    <pre class="code-long"><code>&lt;!DOCTYPE html&gt;</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;html&gt;</td>
+                                <td>This tag opens the page. No markup should come after its closing tag.</td>
+                            </tr>
+                        </table>
                     </li>
                 </ul>
             </div>
