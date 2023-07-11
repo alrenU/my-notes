@@ -29,10 +29,11 @@
             <p class="main-title">Bookmark</p>
             <ol>
                 <li>(Page: 21) HTML_&_CSS_Duckett</li>
-                <li>(Page: 12) HTML_5_Notes_For_Professionals_Book</li>
+                <li>(Page: 15) HTML_5_Notes_For_Professionals_Book</li>
             </ol>
 
             <div style="margin-top: 20px;">
+                <!-- PRELIMINARY INFORMATION -->
                 <p class="main-title">Preliminary Information</p>
                 <ul>
                     <li><span class="heading explanation-title A" id="extensible-hypertext-markup-language">XHTML
@@ -62,8 +63,28 @@
                         systems could only handle file extensions with a maximum of three characters.
                     </li>
                     <br>
+                    <li><span class="explanation-subtitle">Standard Generalized Markup Language (SGML):</span> It is a
+                        system for defining structured document formats and describing the organization and formatting
+                        of textual data. SGML provides a framework for creating markup languages for different purposes.
+                        <br><br>
+                        The main concept behind SGML is that it allows users to define their own document types (known
+                        as Document Type Definitions or DTDs) and specify the rules for marking up the content within
+                        those documents. SGML is based on the idea of separating the structure and content of a document
+                        from its presentation.
+                        <br><br>
+                        SGML has been influential in the development of other markup languages, including
+                        HTML and XML.
+                    </li>
+                    <br>
+                    <li><span class="explanation-subtitle">Document Type Definitions (DTD):</span> DTDs are used in SGML
+                        and XML to define the structure, elements, and valid markup rules for a specific type of
+                        document. A DTD serves as a blueprint or a set of rules that specify the allowable elements,
+                        their relationships, and the order in which they can appear within a document.</li>
+                    <br>
                 </ul>
                 <br>
+
+                <!-- CONTENT -->
                 <p class="main-title">Content</p>
                 <ul>
                     <li><span class="heading explanation-title A" id="tag-and-element">Tag and Element</span><br>
@@ -133,19 +154,7 @@
                             </tr>
                             <tr>
                                 <td>&lt;!DOCTYPE&gt;</td>
-                                <td>It is used to specify the document type and version of HTML being used. It is an
-                                    instruction to the browser about how to interpret the markup of the document. The
-                                    <code class="code-short">&lt;!DOCTYPE&gt;</code> decleration must be placed at the
-                                    beginning of an HTML file, before the <code class="code-short">&lt;html&gt;</code>
-                                    tag.
-                                    <br><br>
-                                    The declaration is followed by a <span class="highlight">document type definition
-                                        (DTD)</span> or a reference to an external DTD file. The purpose of the DTD is
-                                    to define the rules and structure that the HTML document must adhere to.
-                                    <br><br>
-                                    For example this declaration is for HTML5:
-                                    <pre class="code-long"><code>&lt;!DOCTYPE html&gt;</code></pre>
-                                </td>
+                                <td>Defines the HTML version used in the document.</td>
                             </tr>
                             <tr>
                                 <td>&lt;html&gt;&lt;/html&gt;</td>
@@ -172,6 +181,106 @@
                                     audible content of a page.</td>
                             </tr>
                         </table>
+                    </li>
+                    <br>
+                    <li><span class="heading explanation-title A" id="doctype">DOCTYPE</span>
+                        <ul>
+                            <li>The DOCTYPE is used to specify the document type and version of the HTML being used. It
+                                is an instruction to the browser about how to interpret the markup of the document. The
+                                <code class="code-short">&lt;!DOCTYPE&gt;</code> decleration must be placed at the
+                                beginning of an HTML file, before the <code class="code-short">&lt;html&gt;</code> tag.
+                                <br><br>
+                                The declaration is followed by a Document Type Definition (DTD) or a reference to an
+                                external DTD file. The purpose of the DTD is to define the rules and structure that the
+                                HTML document must adhere to.
+                            </li>
+                            <br>
+                            <li>HTML5 is not based on SGML and therefore does not require a reference to a DTD. Thats
+                                why we
+                                can declare the HTML5 in the document as: <code
+                                    class="code-short">&lt;!DOCTYPE html&gt;</code>
+                            </li>
+                            <br>
+                            <li>DOCTYPE declaration is case insensitive. The followings are all valid:
+                                <pre class="code-long"><code>&lt;!doctype html&gt;
+&lt;!DOCTYPE html&gt;
+&lt;!DOCTYPe html&gt;
+&lt;!dOCtyPe html&gt;
+&lt;!DocTYpe html&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li><span class="heading explanation-title A" id="headings">Headings</span>
+                        <ul>
+                            <li>HTML provides six separate header tags to indicate headings. Enumerated as heading 1
+                                through heading 6, heading 1 has the largest text while heading 6 is the smallest, down
+                                to the paragraph level.</li>
+                            <br>
+                            <li>Headings support all the global attributes.</li>
+                            <br>
+                            <li>Defining a heading:
+                                <pre class="code-long"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+                            </li>
+                            <br>
+                            <li>Using a correct heading structure is important in terms of emphasizing the content's
+                                hierarchy.</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li><span class="heading explanation-title A" id="paragraphs">Paragraphs</span>
+                        <ul>
+                            <li><code class="code-short">&lt;p&gt;</code>
+                                <ul>
+                                    <li>Defines a paragraph.</li>
+                                    <li>Usage:
+                                        <pre class="code-long"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>With HTML, you cannot change the output by adding extra spaces or extra lines in your
+                                HTML code. The browser will remove any extra spaces and extra lines when the page is
+                                displayed.</li>
+                            <br>
+                            <li><code class="code-short">&lt;br&gt;</code>
+                                <ul>
+                                    <li>This tag can bu used to break a line.</li>
+                                    <li>Usage:
+                                        <pre class="code-long"><code>&lt;p&gt;This is the first paragraph.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;This is the second paragraph.&lt;/p&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li><code class="code-short">&lt;pre&gt;</code>
+                                <ul>
+                                    <li>With using this tag, the text can be shown as preformatted. It preserves white spaces, line breaks, and indentation exactly as they appear in the HTML code.</li>
+                                    <li>Usage:
+                                        <pre class="code-long"><code>&lt;pre&gt;
+    This is an example
+    of preformatted text.
+
+    It preserves spaces,
+    line breaks,
+    and indentation.
+&lt;/pre&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li><span class="heading explanation-title A" id="text-formatting">Text Formatting</span>
+                        <ul>
+                            <li><code></code></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
