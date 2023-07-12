@@ -43,9 +43,9 @@
 
 .highlight {
     background-color: rgb(255, 201, 0, 0.15);
-    padding-left: 3px;
-    padding-right: 3px;
-    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
 }
 
 #scroll-to-top {

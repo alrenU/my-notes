@@ -29,7 +29,7 @@
             <p class="main-title">Bookmark</p>
             <ol>
                 <li>(Page: 21) HTML_&_CSS_Duckett</li>
-                <li>(Page: 18) HTML_5_Notes_For_Professionals_Book</li>
+                <li>(Page: 21) HTML_5_Notes_For_Professionals_Book</li>
             </ol>
 
             <div style="margin-top: 20px;">
@@ -80,6 +80,15 @@
                         and XML to define the structure, elements, and valid markup rules for a specific type of
                         document. A DTD serves as a blueprint or a set of rules that specify the allowable elements,
                         their relationships, and the order in which they can appear within a document.</li>
+                    <br>
+                    <li><span class="explanation-subtitle">Slug:</span> In web development, a slug typically refers to a
+                        part of a URL that represents a user-friendly and readable version of a resource's title or
+                        name.
+                        <br><br>
+                        For example, consider a blog post titled "Introduction to HTML." The slug for this post could be
+                        "introduction-to-html," and the corresponding URL might look like: <span
+                            class="highlight">https://www.example.com/blog/introduction-to-html</span>.
+                    </li>
                     <br>
                 </ul>
                 <br>
@@ -335,17 +344,94 @@
                             </tr>
                             <tr>
                                 <td>target</td>
-                                <td></td>
+                                <td>This attribute specifies where the linked resource should be opened when clicked.
+                                    Common values include "<code>_blank</code>" to open the link in a new tab or window,
+                                    "<code>_self</code>" to open the link in the same window, "<code>_parent</code>" to
+                                    open the link in the parent frame, and "<code>_top</code>" to open the link in the
+                                    full body of the window.</td>
                             </tr>
                             <tr>
                                 <td>title</td>
-                                <td></td>
+                                <td>This optional attribute specifies additional information about the linked resource.
+                                </td>
                             </tr>
                             <tr>
                                 <td>download</td>
-                                <td></td>
+                                <td>This attribute is used to specify that the target resource should be downloaded when
+                                    clicked, rather than opened in the browser.</td>
                             </tr>
                         </table>
+                        <br>
+                        <ul>
+                            <li>Anchor tags can be used to link separate webpages and different places in a single
+                                document, often within table of contents.</li>
+                            <br>
+                            <li>Basic usage of the anchor tag:
+                                <pre
+                                    class="code-long"><code>&lt;a href="http://example.com/"&gt;Link to example.com&lt;/a&gt;</code></pre>
+                            </li>
+                            <br>
+                            <li>You can link to a site that uses a protocol other than HTTP. For example, to link to an
+                                FTP site:
+                                <pre
+                                    class="code-long"><code>&lt;a href="ftp://example.com/"&gt;FTP site.&lt;/a&gt;</code></pre>
+                            </li>
+                            <br>
+                            <li>To denote that the link leads to an external website, you can use <code
+                                    class="code-short">rel="external"</code> attribute.</li>
+                            <br>
+                            <li>Anchors can be used to jump to specific tags on an HTML page. The <code
+                                    class="code-short">&lt;a&gt;</code> tag can point to any element that has an id
+                                attribute. For example:
+                                <br>
+                                <pre class="code-long"><code>&lt;h2 id="Topic1"&gt;First topic.&lt;/h2&gt;
+&lt;a href='#Topic1'&gt;Click to jump to the First Topic.&lt;/a&gt;</code></pre>
+                            </li>
+                            <br>
+                            <li>You can also link the page to another page's id:
+                                <pre
+                                    class="code-long"><code>&lt;a href="page1.html#Topic1"&gt;Click to jump to the First Topic.&lt;/a&gt;</code></pre>
+                            </li>
+                            <br>
+                            <li>You can use a relative path to link to pages on the same website:
+                                <pre
+                                    class="code-long"><code>&lt;a href="/example"&gt;Go to Example page.&lt;/a&gt;</code></pre>
+                            </li>
+                            <br>
+                            <li>If the value of the href-attribute begins with <code class="code-short">tel:</code>,
+                                your device will dial the number when you click it.
+                                <pre
+                                    class="code-long"><code>&lt;a href="tel:11234567890"&gt;Call us.&lt;/a&gt;</code></pre>
+                            </li>
+                            <br>
+                            <li>Using <code class="code-short">target="_blank"</code> gives the opening site partial
+                                access to the <code>window.opener</code> object via JavaScript, which allows that page
+                                to then access and change the window.opener.location of your page and potentially
+                                redirect users to malware or phishing sites.
+                                <br><br>
+                                Whenever using this for pages you do not control, add <code
+                                    class="code-short">rel="noopener"</code> to your link to prevent the
+                                <code>window.opener</code> object from being sent with the request.
+                            </li>
+                            <br>
+                            <li>Running JavaScript in the code:
+                                <pre class="code-long"><code>&lt;!-- The first method. --&gt;
+&lt;a href="javascript:myFunction();"&gt;Run Code&lt;/a&gt;</code></pre>
+
+                                <pre class="code-long"><code>&lt;!-- The second method. --&gt;
+&lt;a href="#" onclick="myFunction(); return false;"&gt;Run Code&lt;/a&gt;</code></pre>
+                                <br>
+                                In the second example, <code class="code-short">return false;</code> prevents the page
+                                from scrolling to the top when it is clicked.
+                                <br><br>
+                                Also giving any invalid value (nonexistent element id) after the hashtag will prevent
+                                the page from scrolling to top. Because it couldn't locate the element it references.
+                                <pre
+                                    class="code-long"><code>&lt;a href="#!" onclick="myFunction();"&gt;Run Code&lt;/a&gt;</code></pre>
+                                <br>
+                                Running JavaScript inline with the element like this is fairly bad practice. Consider using pure JavaScript that listens for an event on element.
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
