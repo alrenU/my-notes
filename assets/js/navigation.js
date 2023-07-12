@@ -14,16 +14,12 @@ for (let index = 0; index < HEADING_ELEMENTS.length; index++) {
   if (heading_id !== null) {
     HEADING_ID_LIST.push(heading_id);
 
-    // Convert the heading IDs into capitalized format.
+    // Rearrange the navigation link text.
     const PARSED_ID_TEXT = heading_id.split("-");
     let navigation_link = "";
 
     for (let index_2 = 0; index_2 < PARSED_ID_TEXT.length; index_2++) {
-      const first_character = PARSED_ID_TEXT[index_2].charAt(0).toUpperCase();
-      const capitalized_text =
-        first_character + PARSED_ID_TEXT[index_2].slice(1);
-
-      navigation_link += ` ${capitalized_text}`;
+      navigation_link += " " + PARSED_ID_TEXT[index_2];
     }
 
     // Create navigation list.
